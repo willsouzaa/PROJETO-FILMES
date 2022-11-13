@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>FILMES E SERIES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,0">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+  <body>
+<!-- JalewaAds - Ad Display Code -->
+<div id="adm-container-15789"></div><script data-cfasync="false" async type="text/javascript" src="//display.jalewaads.com/display/items.php?15789&5388&728&90&4&0&0"></script>
+<!-- JalewaAds - Ad Display Code -->
+        <header>
+        <h1>FILMES E SERIES ONLINE</h1>
+        <img src="./imagens/Img.jpg" alt="logo">
+      </header>
+      <H2>categoria</H2>
+      <ul>
+<button class="primeirobutton" id="primeirobutton" type="button" onclick="myfunction()">       
+  <li><a href="./index1.html">ACAO</a></li>
+</button>
+<button class="primeirobutton1" type="button" onclick="myfuncion()">
+      <li><a href="./index2.html">AVENTURA</a></li>
+      </button>
+      <button class="primeirobutton1" type="button" onclick="myfuncion()">
+        <li><a href="">ROMANCE</a></li>
+      </button>
+      <button class="primeirobutton1" type="button" onclick="myfuncion()">
+        <li><a href="">FICCAO CIENTIFICA</a></li>
+      </button>
+        <button class="primeirobutton1" type="button" onclick="myfuncion()">
+        <li><a href="./INDEXTERROR.HTML">TERROR</a></li>
+      </button>
+        <button class="primeirobutton1" type="button" onclick="myfuncion()">
+        <li><a href="">COMEDIA</a></li>
+        </button>
+        <button class="primeirobutton1" type="button" onclick="myfuncion()">
+        <li><a href="">MUSICAL</a></li>
+        </button>
+        </header>
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="./imagens/a-garota-no-trem.jpg" style="width:100%">
+              <div class="text">Caption Text</div>
+          </div>
+  
+          <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="./imagens/guardioesdagalaxia2.jfif" style="width:100%">
+              <div class="text">Caption Two</div>
+          </div>
+  
+          <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="./imagens/homemaaranhalongedecasa.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+          </div>
+  
+          <a class="prev" onclick="plusSlides(-1)">voltar</a>
+          <a class="next" onclick="plusSlides(1)">avançar</a>
+  
+      </div>
+      <br>
+  
+      <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+  
+      <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+    </body>
+    
+    <script  type="text/javascript" src="js.js">
+    </script>
+   
+  </head>
+</html>
